@@ -1,0 +1,283 @@
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 84%;
+        margin: auto;
+    }
+
+
+    /* ^^^^^ Navbar Section ^^^^^  */
+    .show-list {
+        display: block;
+    }
+
+    .nav-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-pages {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 25%;
+        height: 100%;
+        z-index: 1200;
+        background-color: #fff;
+        border-left: 0.1px solid #eceaea;
+        transform: translatex(100%);
+        transition: 0.5s all;
+    }
+
+    #open-list:target {
+        transform: translate(0);
+    }
+
+
+    .nav-pages ul {
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+    }
+
+    .nav-pages ul li {
+        margin-block: 20px;
+    }
+
+    .nav-pages ul li:hover::after {
+        width: 0;
+    }
+
+    .nav-icons {
+        display: flex;
+        justify-content: space-between;
+        width: 8%;
+    }
+
+    .nav-pages .close-i {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 30px;
+        color: #808080;
+        font-size: 23px;
+    }
+
+    /* //////////////////////////////////////////////////////////////////////// */
+    /*  ^^^^^ Gallery Section ^^^^^ */
+    .meals {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+        height: 900px;
+    }
+
+    /* //////////////////////////////////////////////////////////////////// */
+    /* ^^^^^^Footer Section */
+    .foot-layer .container {
+        flex-wrap: wrap;
+    }
+
+    .foot-sec1 {
+        width: 50%;
+        order: 1;
+    }
+
+    .foot-sec2 {
+        width: 100%;
+        order: 3;
+    }
+
+    .foot-sec3 {
+        width: 45%;
+        order: 2;
+    }
+
+    .foot-submit {
+        width: 95%;
+    }
+
+
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+@media screen and (max-width:992px) {
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+
+    .nav-icons {
+        width: 80px;
+    }
+
+    .nav-pages {
+        width: 35%;
+    }
+
+
+    /* ^^^^ Header Section ^^^^^ */
+    #home .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .header-content {
+        width: 95%;
+        order: 2;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+
+    .header-img {
+        width: 100%;
+        order: 1;
+        margin-bottom: 70px;
+    }
+
+    .header-content p {
+        width: 80%;
+    }
+
+    .book-btn {
+        border-radius: 25px;
+    }
+
+    /* ////////////////////////////////////////////////////// */
+    /* ^^^^^^^^^^Chef section ^^^^^^^^ */
+    #chef .container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .chef {
+        width: 47%;
+        margin-bottom: 30px;
+    }
+
+    /* ////////////////////////////////////////////////////// */
+    /* ^^^^^^^^^^Gallery section ^^^^^^^^ */
+    .meals {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+        height: 1500px;
+    }
+
+    .meal {
+        width: calc((100% /2) - 20px);
+    }
+
+    .pizza-s {
+        order: 1;
+    }
+
+    .burger {
+        order: 2;
+    }
+
+    .pizza-l {
+        order: 3;
+    }
+
+    .Frittata {
+        order: 4;
+    }
+
+    .steaks {
+        order: 5;
+    }
+
+    .Crispy {
+        order: 6;
+    }
+
+    .kebab {
+        order: 7;
+    }
+
+    /* ////////////////////////////////////////////////////// */
+    /* ^^^^^^^^^^Contact section ^^^^^^^^ */
+    .input-name,
+    .input-email {
+        width: 100%;
+    }
+}
+
+/* /////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width:768px) {
+    .container {
+        width: 90%;
+    }
+
+    .nav-icons {
+        width: 70px;
+    }
+
+    .nav-pages {
+        width: 60%;
+    }
+
+    .header-img {
+        width: 100%;
+        margin-bottom: 55px;
+    }
+
+    .chef {
+        width: 100%;
+    }
+
+    .meals {
+        height: auto;
+        padding-bottom: 100px;
+    }
+
+    .meal {
+        width: 100%;
+    }
+
+    .contact-info .info1 {
+        width: 100%;
+    }
+
+
+    .foot-sec1 {
+        width: 100%;
+        order: 1;
+    }
+
+    .foot-sec2 {
+        width: 100%;
+        order: 2;
+    }
+
+    .foot-sec3 {
+        width: 100%;
+        order: 3;
+    }
+
+    .foot-submit {
+        width: 100%;
+    }
+
+    .sec2-header button {
+        font-size: 14px;
+        width: 25%;
+    }
+
+    .sec2-header input {
+        width: 75%;
+        padding: 10px 15px;
+    }
+
+}
